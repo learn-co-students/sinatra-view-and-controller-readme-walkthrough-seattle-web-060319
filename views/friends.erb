@@ -9,7 +9,11 @@
   <body>
     <h1>My Super Cool Friends List</h1>
 
-    <!-- Iterate through the @friends array here to display each item in its own <h2> tag -->
+    <ul style="list-style: none;">
+      <% @friends.each do |friend| %>
+        <li><%= friend %></li>
+      <% end %>
+    </ul>
 
   </body>
 </html>
